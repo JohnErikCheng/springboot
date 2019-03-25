@@ -12,6 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class IntroductionController {
+
+    /**
+     * 测试方法：hello world
+     * @return
+     */
     @RequestMapping("/test")
     public String index() {
         return "Hello World! yeah!";

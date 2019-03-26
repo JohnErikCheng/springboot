@@ -3,10 +3,10 @@
     * 创建User类
     * 创建swagger配置类（@Configuration、@EnableSwagger2）
     * 创建UserController,注意一下三个注解：
-         [@ApiOperation](..)
-         [@ApiImplicitParam](..)
-         [@ApiImplicitParams](..)
-        ```
+         [@ApiOperation]
+         [@ApiImplicitParam]
+         [@ApiImplicitParams]
+        ```java
           @ApiOperation(value = "修改指定用户信息", notes = "根据用户的唯一id修改指定用户的信息")
           @ApiImplicitParams({
                   @ApiImplicitParam(name = "id", value = "用户的唯一序列号", required = true, dataType = "Long"),

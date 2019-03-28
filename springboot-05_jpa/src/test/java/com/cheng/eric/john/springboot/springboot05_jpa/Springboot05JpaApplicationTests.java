@@ -24,11 +24,11 @@ public class Springboot05JpaApplicationTests {
         userRepository.saveAndFlush(new User("ddd", 23));
         userRepository.saveAndFlush(new User("eee", 24));
 
-       /* User who = userRepository.findByUserName("ccc");
+        User who = userRepository.findByUserName("ccc");
         System.out.println("findByUserName aaa is" + who.toString());
 
         User smo = userRepository.findByUserNameAndAndUserAge("aaa", 21);
-        System.out.println("findByUserNameAndAndUserAge is" + smo);*/
+        System.out.println("findByUserNameAndAndUserAge is" + smo);
 
         User eee = userRepository.findUser("eee");
         System.out.println("findSomeone is" + eee);
